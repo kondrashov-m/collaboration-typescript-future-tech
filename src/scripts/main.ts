@@ -1,8 +1,8 @@
-import Header from "./Header.ts";
-import TabsCollection from "./Tabs.ts";
-import VideoPlayerCollection from "./Videos.ts";
-import ExpandableContentCollection from "./ExpandableContent.ts";
-import InputMaskCollection from "./InputMask.ts";
+import Header from "./Header";
+import TabsCollection from "./Tabs";
+import VideoPlayerCollection from "./Videos";
+import ExpandableContentCollection from "./ExpandableContent";
+import InputMaskCollection from "./InputMask";
 
 new Header();
 new TabsCollection();
