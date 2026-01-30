@@ -1,4 +1,4 @@
-// vite.config.ts
+// vite.config.js
 import { defineConfig } from 'vite';
 
 export default defineConfig({
@@ -15,5 +15,8 @@ export default defineConfig({
         contacts: 'contacts.html'
       }
     }
+  },
+  resolve: {
+    extensions: ['.ts', '.js']
   }
 });
