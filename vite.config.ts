@@ -1,10 +1,15 @@
-// vite.config.ts
+// vite.config.js
 import { defineConfig } from 'vite';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
+  resolve: {
+    extensions: ['.ts', '.js'], // Добавляем поддержку .ts расширений
+  },
   build: {
-    outDir: 'dist',
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
@@ -15,11 +20,6 @@ export default defineConfig({
         select: path.resolve(__dirname, 'select.html'),
         contacts: path.resolve(__dirname, 'contacts.html')
       }
-    }
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, 'src')
     }
   }
 });
