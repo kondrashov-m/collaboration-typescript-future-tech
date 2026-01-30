@@ -9,3 +9,4 @@ new TabsCollection();
 new VideoPlayerCollection();
 new ExpandableContentCollection();
 new InputMaskCollection();
+// kondrashov-m
