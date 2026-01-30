@@ -1,8 +1,8 @@
-import Header from "./Header.js";
-import TabsCollection from "./Tabs.js";
-import VideoPlayerCollection from "./Videos.js";
-import ExpandableContentCollection from "./ExpandableContent.js";
-import InputMaskCollection from "./InputMask.js";
+import Header from "./Header";
+import TabsCollection from "./Tabs";
+import VideoPlayerCollection from "./Videos";
+import ExpandableContentCollection from "./ExpandableContent";
+import InputMaskCollection from "./InputMask";
 
 new Header();
 new TabsCollection();
