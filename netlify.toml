@@ -1,0 +1,40 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Для многостраничного сайта - убираем SPA redirects
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/news"
+  to = "/news.html"
+  status = 200
+
+[[redirects]]
+  from = "/podcasts"
+  to = "/podcasts.html"
+  status = 200
+
+[[redirects]]
+  from = "/resources"
+  to = "/resources.html"
+  status = 200
+
+[[redirects]]
+  from = "/contacts"
+  to = "/contacts.html"
+  status = 200
+
+[[redirects]]
+  from = "/select"
+  to = "/select.html"
+  status = 200
+
+# Обработка 404 - перенаправляем на главную
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
