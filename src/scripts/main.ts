@@ -1,4 +1,4 @@
-import Header from "./Header";
+import Header from "./Header.js";
 import TabsCollection from "./Tabs";
 import VideoPlayerCollection from "./Videos";
 import ExpandableContentCollection from "./ExpandableContent";
@@ -9,4 +9,4 @@ new TabsCollection();
 new VideoPlayerCollection();
 new ExpandableContentCollection();
 new InputMaskCollection();
-// kondrashov-m
+// kondrashov-m v2.0

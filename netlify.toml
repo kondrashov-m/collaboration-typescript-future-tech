@@ -2,38 +2,29 @@
   publish = "dist"
   command = "npm run build"
 
-# Для многостраничного сайта - убираем SPA redirects
+# Явные правила для многостраничного сайта
 [[redirects]]
   from = "/blog"
   to = "/blog.html"
   status = 200
+  force = true
 
 [[redirects]]
   from = "/news"
   to = "/news.html"
   status = 200
+  force = true
 
+# Добавьте правила для всех других страниц: /podcasts, /resources, /contacts, /select
+
+# Правило для главной страницы (опционально, но желательно)
 [[redirects]]
-  from = "/podcasts"
-  to = "/podcasts.html"
+  from = "/"
+  to = "/index.html"
   status = 200
+  force = true
 
-[[redirects]]
-  from = "/resources"
-  to = "/resources.html"
-  status = 200
-
-[[redirects]]
-  from = "/contacts"
-  to = "/contacts.html"
-  status = 200
-
-[[redirects]]
-  from = "/select"
-  to = "/select.html"
-  status = 200
-
-# Обработка 404 - перенаправляем на главную
+# Обработка 404-х ошибок для несуществующих файлов
 [[redirects]]
   from = "/*"
   to = "/index.html"
